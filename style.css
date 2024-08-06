@@ -1,0 +1,60 @@
+@font-face {
+  font-family: ace;
+  src: url(font.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 13px;
+  position: relative;
+  /* background-color: yellow; */
+  /* background-color: rgba(245, 221, 3, 0.5); */
+  /* background-color: #eeeeee; */
+  background-image: linear-gradient(
+    to bottom right,
+    yellow,
+    rgba(255, 0, 0, 0.74)
+  );
+  /* transition: transform 1s; */
+  transition: all 1s;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 5px 8px;
+}
+.top-left,
+.text-center,
+.bottom-right {
+  position: absolute;
+  font-size: 30px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  color: blue;
+}
+.text-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: ace;
+}
+.top-left {
+  left: 5px;
+  top: 5px;
+  color: blue;
+  /* transform: rotate(180); */
+}
